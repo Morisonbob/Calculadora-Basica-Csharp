@@ -8,7 +8,8 @@ namespace Calculator
 {
     class Program
     {
-        static void Main(string[] args){
+        static void Main(string[] args)
+        {
             calc n = new calc();
             n.Menu();
             int choice;
@@ -16,15 +17,15 @@ namespace Calculator
             bool controle = true;
             while (controle)
             {
-                    choice = Convert.ToInt32(Console.ReadLine());
-                    //Console.WriteLine(choice); Checking the input
+                choice = Convert.ToInt32(Console.ReadLine());
+                //Console.WriteLine(choice); Checking the input
                 switch (choice)
                 {
                     case 1:
                         Console.Write("Digite o primeiro numero e pressione enter: ");
-                        pri = Convert.ToInt32(Console.ReadLine());
+                        pri = Convert.ToDouble(Console.ReadLine());
                         Console.Write("Digite o segundo numero e pressione enter: ");
-                        sec = Convert.ToInt32(Console.ReadLine());
+                        sec = Convert.ToDouble(Console.ReadLine());
                         res = pri + sec;
                         Console.WriteLine("O resultado e: " + res);
                         Console.ReadKey();
@@ -34,9 +35,9 @@ namespace Calculator
 
                     case 2:
                         Console.Write("Digite o primeiro numero e pressione enter: ");
-                        pri = Convert.ToInt32(Console.ReadLine());
+                        pri = Convert.ToDouble(Console.ReadLine());
                         Console.Write("Digite o segundo numero e pressione enter: ");
-                        sec = Convert.ToInt32(Console.ReadLine());
+                        sec = Convert.ToDouble(Console.ReadLine());
                         res = pri - sec;
                         Console.WriteLine("O resultado e: " + res);
                         Console.ReadKey();
@@ -46,9 +47,9 @@ namespace Calculator
 
                     case 3:
                         Console.Write("Digite o primeiro numero e pressione enter: ");
-                        pri = Convert.ToInt32(Console.ReadLine());
+                        pri = Convert.ToDouble(Console.ReadLine());
                         Console.Write("Digite o segundo numero e pressione enter: ");
-                        sec = Convert.ToInt32(Console.ReadLine());
+                        sec = Convert.ToDouble(Console.ReadLine());
                         res = pri * sec;
                         Console.WriteLine("O resultado e: " + res);
                         Console.ReadKey();
@@ -58,9 +59,9 @@ namespace Calculator
 
                     case 4:
                         Console.Write("Digite o primeiro numero e pressione enter: ");
-                        pri = Convert.ToInt32(Console.ReadLine());
+                        pri = Convert.ToDouble(Console.ReadLine());
                         Console.Write("Digite o segundo numero e pressione enter: ");
-                        sec = Convert.ToInt32(Console.ReadLine());
+                        sec = Convert.ToDouble(Console.ReadLine());
                         res = pri / sec;
                         Console.WriteLine("O resultado e: " + res);
                         Console.ReadKey();
@@ -81,7 +82,7 @@ namespace Calculator
                 }
             }
         }
-            
+
     }
 
     public class calc
