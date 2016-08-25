@@ -1,8 +1,21 @@
 using System;
 
+public class calc
+{
+    public void Menu()
+    {
+        Console.WriteLine("Calculadora rustica");
+        Console.WriteLine("\nEscolha que tipo de operacao voce deseja fazer:");
+        Console.WriteLine("\n1.Adicao;");
+        Console.WriteLine("2.Subtracao;");
+        Console.WriteLine("3.Multiplicacao;");
+        Console.WriteLine("4.Divisao;");
+        Console.WriteLine("\nDigite 5 para sair.");
+        Console.Write("\nDigite o numero correspondente a operacao e aperte enter: ");
+    }
+}
 
-
-    class Program
+class Program
     {
         static void Main(string[] args)
         {
@@ -91,20 +104,4 @@ using System;
                 }
             }
         }
-
-
-    public class calc
-    {
-        public void Menu()
-        {
-            Console.WriteLine("Calculadora rustica");
-            Console.WriteLine("\nEscolha que tipo de operacao voce deseja fazer:");
-            Console.WriteLine("\n1.Adicao;");
-            Console.WriteLine("2.Subtracao;");
-            Console.WriteLine("3.Multiplicacao;");
-            Console.WriteLine("4.Divisao;");
-            Console.WriteLine("\nDigite 5 para sair.");
-            Console.Write("\nDigite o numero correspondente a operacao e aperte enter: ");
-        }
-    }
 }
