@@ -1,25 +1,34 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
-{
+
+
     class Program
     {
         static void Main(string[] args)
         {
             calc n = new calc();
             n.Menu();
-            int choice;
+            String choice;
+            int numero, numero_2;
             double res, pri, sec;
             bool controle = true;
             while (controle)
             {
-                choice = Convert.ToInt32(Console.ReadLine());
-                //Console.WriteLine(choice); Checking the input
-                switch (choice)
+                choice = Console.ReadLine();
+                bool checagem = int.TryParse(choice, out numero);
+                while (!checagem)
+                {
+                    Console.WriteLine("Entrada invalida");
+                    Console.ReadKey();
+                    Console.Clear();
+                    n.Menu();
+                    choice = Console.ReadLine();
+                    checagem = int.TryParse(choice, out numero);
+
+                }
+                    numero_2 = int.Parse(choice);
+                
+                switch (numero_2)
                 {
                     case 1:
                         Console.Write("Digite o primeiro numero e pressione enter: ");
@@ -83,7 +92,6 @@ namespace Calculator
             }
         }
 
-    }
 
     public class calc
     {
